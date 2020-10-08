@@ -13,19 +13,30 @@ git push -u origin main
 <body>
 	<nav class="navbar navbar-expand-sm bg-dark" ><!-- start menu -->
 		<div class="container">
-	
 			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
 				Menu
 			</button>
-
-
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-
+			<div class="collapse navbar-collapse bg-dark" id="navbarSupportedContent">
 				<ul class="navbar-nav">
 					<li><a href="#" class="nav-link">Home</a></li>
 					<li><a href="#" class="nav-link">Hospitais</a></li>
 					<li><a href="#" class="nav-link">Tipos de Hospitais</a></li>
-					<li><a href="#" class="nav-link">Gerenciar Hospitais</a></li>
+					<li class="dropdown">
+						<a href="#" class="nav-link  dropdown-toggle" data-toggle="dropdown">Gerenciar Hospitais</a>
+						<ul class="dropdown-menu">
+							<li >
+								<a href="#" class="dropdown-item">Inserir Hospitais</a>
+							</li>
+							<li class="dropdown-divider"></li>
+							<li>
+								<a href="#" class="dropdown-item">Editar Hospitais</a>
+							</li>
+							<li class="dropdown-divider"></li>
+							<li>
+								<a href="#" class="dropdown-item">Excluir Hospitais</a>
+							</li>
+						</ul>
+					</li>
 					<li><a href="#" class="nav-link">Registro</a></li>
 					<li><a href="#" class="nav-link">Login</a></li>
 				</ul>
