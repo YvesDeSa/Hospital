@@ -2,8 +2,9 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
-	<title></title>
+	<title>Hospitalar</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <!--
 git remote add origin https://github.com/YvesDeSa/Hospital.git
@@ -11,13 +12,13 @@ git branch -M main
 git push -u origin main
 -->
 <body>
-	<nav class="navbar navbar-expand-sm bg-dark" ><!-- start menu -->
+	<nav class="navbar navbar-expand-sm bg-dark navbar-light"><!-- start menu -->
 		<div class="container">
 			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
-				Menu
+				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse bg-dark" id="navbarSupportedContent">
-				<ul class="navbar-nav">
+				<ul class="navbar-nav ml-auto mr-auto">
 					<li><a href="#" class="nav-link">Home</a></li>
 					<li><a href="#" class="nav-link">Hospitais</a></li>
 					<li><a href="#" class="nav-link">Tipos de Hospitais</a></li>
@@ -44,21 +45,61 @@ git push -u origin main
 		</div>
 	</nav>
 
-	<section id="title"><!-- start title -->
-		
-	</section>
+	<main>
+		<section id="title" class="jumbotron"><!-- start title -->
+			<form class="input-group">				
+				<input class="form-control" type="search" placeholder="Busque aqui!" name="search">
+				<input class="btn btn-primary ml-1" type="submit" value="Pesquisar">	
+			</form>
+		</section>
 
-	<section id="added"><!-- start added -->
-		
-	</section>
+		<section id="added"><!-- start added -->
+			<h2>Adicionados Recentemente</h2>
+			<div class="row">
+				<a href="#" class="col-lg-3 col-sm-12 col-md-6">
+					<figure>
+						<img src="img/hosp.jpg" alt="" class="img-fluid img-thumbnail">
+						<figcaption>
+						Hospital número um em atendimento
+						</figcaption>
+					</figure>
+				</a>
+				<a href="#" class="col-lg-3 col-sm-12 col-md-6">
+					<figure>
+						<img src="img/hosp.jpg" alt="" class="img-fluid img-thumbnail">
+						<figcaption>
+						Hospital número um em atendimento
+					</figcaption>
+					</figure>
+				</a>
+				<a href="#" class="col-lg-3 col-sm-12 col-md-6">
+					<figure>
+						<img src="img/hosp.jpg" alt="" class="img-fluid img-thumbnail">
+						<figcaption>
+						Hospital número um em atendimento
+						</figcaption>
+					</figure>
+				</a>
+				<a href="#" class="col-lg-3 col-sm-12 col-md-6">
+					<figure>
+						<img src="img/hosp.jpg" alt="" class="img-fluid img-thumbnail">
+						<figcaption>
+						Hospital número um em atendimento
+						</figcaption>
+					</figure>
+				</a>
+			</div>
+		</section>
 
-	<section id="rated"><!-- start rated -->
-		
-	</section>
+		<section id="rated"><!-- start rated -->
 
-	<section id="team"><!-- start team -->
-		
-	</section>
+		</section>
+
+		<section id="team"><!-- start team -->
+
+		</section>
+
+	</main>
 
 	<footer>
 		
