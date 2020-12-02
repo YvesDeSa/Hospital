@@ -6,3 +6,15 @@
 .navbar-light .navbar-nav .nav-link{
     color: #007bff;
 }
+.mestre{
+	width: 60px;
+	height: 60px;
+}
+.icon li{
+	margin-left: 0.6rem;
+	display: inline-block;
+}
+.icon img{
+	width: 36px;
+	height: 36px;
+}
