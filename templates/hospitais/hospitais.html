@@ -1,0 +1,35 @@
+{% extends 'hospitais/base_lista.html' %}
+
+{% block content %}
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Nome do Hospital</th>
+                    <th>Foto do Hospital</th>
+                    <th>Descrição do Hospital</th>
+                    <th>Tipo do Hospital</th>
+                    <th>Conceito do Hospital</th>
+                    <th>Editar</th>
+                    <th>Excluir</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for Hospital in hospitais %}
+                <tr>
+                    <th>{{hospital.nome_hospital}}</th>
+                    <th><img src="{{hospital.foto_url}}" class="img-fluid img-thumbnail" alt=""></th>
+                    <th>{{hospital.desc_hospital}}</th>
+                    <th>{{hospital.tipo_hospital}}</th>
+                    <th>{{hospital.conceito_hospital}}</th>
+                    <tr><a href="{% url 'editar' hospital.id%}" class="btn btn-warning"></a>Editar</tr>
+                    <tr><a href="{% url 'deletar' hospital.id%}" class="btn btn-danger"></a>Excluir</tr>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    {{hospitais}}
+    
+{% endblock content %}
